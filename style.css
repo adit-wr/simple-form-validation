@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: #2f5629;
+    background: linear-gradient(to right, #002204, #264e20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    background-color: #42733a;
+    box-shadow: -5px 0 100px rgba(255, 255, 255, 0.35);
+    width: 968px;
+    border-radius: 40px;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 50px;
+    width: 60%;
+}
+
+.window{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 50px;
+    border: 10px solid #ececec;
+    background-color: #ececec;
+    border-radius: 300px 40px 40px 20px;
+}
+
+.window h1{
+    color: #42733a;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    font-size: 50px;
+}
+
+.window p{
+    color: #42733a;
+    text-align: center;
+}
+
+form h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+h1{
+    text-align: end;
+}
+
+.forminput{
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.forminput label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.forminput input,
+.forminput textarea{
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 2px solid #ddd;
+    background-color: #ddd;
+    box-shadow: 0 1px 10px #193215;
+    border-radius: 10px;
+    outline: none;
+}
+
+button{
+    width: 40%;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+    box-shadow: 0 1px 10px #193215;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #598552;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=tel]::placeholder,
+input[type=password]::placeholder{
+    color: #000000;
+}
+
+.forminput .icon{
+    position: absolute;
+    right: 10px;
+    top: 71%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: transparent;
+    pointer-events: none;
+}
+
+.forminput.success input,
+.forminput.success textarea{
+    border-color: #2ecc71;
+}
+
+.forminput.success .icon{
+    color: #2ecc71;
+}
+
+.forminput.error input,
+.forminput.error textarea{
+    border-color: #e74c3c;
+}
+
+.forminput.error .icon,
+.forminput.error input::placeholder,
+.forminput.error textarea::placeholder{
+    color: #e74c3c;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sucesnotif{
+    background-color: #42733a;
+    color: #dcdcdc;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    border: 2px solid #dcdcdc;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close{
+    color: #dcdcdc;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.close:hover,
+.close:focus{
+    color: #dcdc;
+    text-decoration: none;
+    cursor: pointer;
+}
